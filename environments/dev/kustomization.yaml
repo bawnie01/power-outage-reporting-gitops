@@ -2,15 +2,15 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - https://github.com/bawnie01/power-outage-reporting//deployments/kubernetes?ref=19f6a3376d8e071ecf440a65b2a7cdfed05abd48
+  - https://github.com/bawnie01/power-outage-reporting//deployments/kubernetes?ref=6b86902efef0386fed2cea278c94a39c03e9c253
 
 images:
   - name: ghcr.io/bawnie01/outage-service
-    newTag: sha-775e5a1
+    newTag: sha-6b86902
   - name: ghcr.io/bawnie01/notification-service
-    newTag: sha-775e5a1
+    newTag: sha-6b86902
   - name: ghcr.io/bawnie01/sms-partner-mock
-    newTag: sha-775e5a1
+    newTag: sha-6b86902
 
 commonLabels:
   app.kubernetes.io/environment: dev
