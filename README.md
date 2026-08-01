@@ -35,8 +35,9 @@ Kubernetes cluster
 
 ## Current Release
 
-The `dev` environment uses application commit `775e5a1` and the corresponding
-container tag `sha-775e5a1`.
+The `dev` environment uses container tag `sha-775e5a1`. Kubernetes manifests
+are pinned separately to a full source commit, allowing deployment corrections
+without rebuilding unchanged application images.
 
 ## Preview
 
@@ -61,4 +62,3 @@ kubectl apply -f bootstrap/power-outage-dev.yaml
 
 Argo CD will create the `power-outage` namespace and synchronize the complete
 platform. The source CI pipeline does not require Kubernetes credentials.
-
