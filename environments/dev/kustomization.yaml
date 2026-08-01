@@ -2,7 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - https://github.com/bawnie01/power-outage-reporting//deployments/kubernetes?ref=79ec6edea3cc3f642956616627e4dbd8470748be
+  - https://github.com/bawnie01/power-outage-reporting//deployments/kubernetes?ref=8d6055467eef429890cd84cce81f6db2bdfee2af
 
 images:
   - name: ghcr.io/bawnie01/outage-service
